@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CApplication</name>
+    </assembly>
+    <members>
+        <member name="T:CApplication.AutoMapper.AutoMapperProfile">
+            <summary>
+            自动映射文件
+            </summary>
+        </member>
+        <member name="T:CApplication.IService.IPermissionService">
+            <summary>
+            权限服务接口
+            </summary>
+        </member>
+        <member name="M:CApplication.IService.IPermissionService.GetAllByUserIdAsync(System.Int32)">
+            <summary>
+            根据用户ID异步查询列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CApplication.IService.IUserService">
+            <summary>
+            用户服务接口
+            </summary>
+        </member>
+        <member name="M:CApplication.IService.IUserService.GetAllAsync">
+            <summary>
+            异步查询列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.IService.IUserService.GetByIdAsync(System.Int32)">
+            <summary>
+            根据ID异步查询
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.IService.IUserService.AddAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步添加
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.IService.IUserService.UpdateAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步修改
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+        </member>
+        <member name="M:CApplication.IService.IUserService.DeleteByIdAsync(System.Int32)">
+            <summary>
+            根据ID异步删除
+            </summary>
+            <param name="id">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.IService.IUserService.RegisterAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步注册
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.IService.IUserService.LoginAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步登录
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+        </member>
+        <member name="M:CApplication.IService.IUserService.LogoutAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步退出
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+        </member>
+        <member name="T:CApplication.Service.PermissionService">
+            <summary>
+            权限服务
+            </summary>
+        </member>
+        <member name="T:CApplication.Service.UserService">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="F:CApplication.Service.UserService._repository">
+            <summary>
+            用户领域模型(领域模型,命令模型,事件模型)仓储接口
+            </summary>
+        </member>
+        <member name="F:CApplication.Service.UserService._mapper">
+            <summary>
+            自动映射
+            </summary>
+        </member>
+        <member name="F:CApplication.Service.UserService._bus">
+            <summary>
+            总线(中介者)处理程序接口
+            </summary>
+        </member>
+        <member name="M:CApplication.Service.UserService.RegisterAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步注册
+            </summary>
+            <param name="viewModel">C端用户视图模型</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.Service.UserService.LoginAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步登录
+            </summary>
+            <param name="viewModel">C端用户视图模型</param>
+            <returns></returns>
+        </member>
+        <member name="M:CApplication.Service.UserService.LogoutAsync(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            异步退出
+            </summary>
+            <param name="viewModel">C端用户视图模型</param>
+            <returns></returns>
+        </member>
+        <member name="T:CApplication.ViewModel.PermissionViewModel">
+            <summary>
+            权限视图模型，视图模型可以理解成DTO
+            </summary>
+        </member>
+        <member name="P:CApplication.ViewModel.PermissionViewModel.PermissionId">
+            <summary>
+            权限ID
+            </summary>
+        </member>
+        <member name="P:CApplication.ViewModel.PermissionViewModel.PermissionName">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:CApplication.ViewModel.PermissionViewModel.PermissionPath">
+            <summary>
+            权限路径
+            </summary>
+        </member>
+        <member name="T:CApplication.ViewModel.UserViewModel">
+            <summary>
+            用户视图模型
+            </summary>
+        </member>
+        <member name="T:CApplication.ViewModel.ViewModel">
+            <summary>
+            视图模型(DTO)
+            </summary>
+        </member>
+        <member name="P:CApplication.ViewModel.ViewModel.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+    </members>
+</doc>

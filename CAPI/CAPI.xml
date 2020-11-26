@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CAPI</name>
+    </assembly>
+    <members>
+        <member name="T:CAPI.Controllers.UserController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Get">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Get_v2">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            根据ID获取用户
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Post(CApplication.ViewModel.UserViewModel)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="viewModel">用户视图模型</param>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Put(System.Int32,System.String)">
+            <summary>
+            修改用户
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:CAPI.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            根据ID删除用户
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>

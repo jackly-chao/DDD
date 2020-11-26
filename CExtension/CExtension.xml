@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CExtension</name>
+    </assembly>
+    <members>
+        <member name="T:CExtension.Authentication.AuthenticationHandler">
+            <summary>
+            认证处理程序
+            </summary>
+        </member>
+        <member name="T:CExtension.Authentication.AuthenticationService">
+            <summary>
+            认证服务
+            </summary>
+        </member>
+        <member name="T:CExtension.Authorization.AuthorizationHandler">
+            <summary>
+            授权处理程序
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.Permissions">
+            <summary>
+            用户权限集合，一个订单包含了很多详情，
+            同理，一个网站的认证发行中，也有很多权限详情(这里是Role和URL的关系)
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.DeniedAction">
+            <summary>
+            无权限action
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.ClaimType">
+            <summary>
+            认证授权类型
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.LoginPath">
+            <summary>
+            请求路径
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.Issuer">
+            <summary>
+            发行人
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.Audience">
+            <summary>
+            订阅人
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.Expiration">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionRequirement.SigningCredentials">
+            <summary>
+            签名验证
+            </summary>
+        </member>
+        <member name="M:CExtension.Authorization.PermissionRequirement.#ctor(System.String,System.Collections.Generic.List{CExtension.Authorization.PermissionItem},System.String,System.String,System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.TimeSpan)">
+            <summary>
+            构造
+            </summary>
+            <param name="deniedAction">拒约请求的url</param>
+            <param name="permissions">权限集合</param>
+            <param name="claimType">声明类型</param>
+            <param name="issuer">发行人</param>
+            <param name="audience">订阅人</param>
+            <param name="signingCredentials">签名验证实体</param>
+            <param name="expiration">过期时间</param>
+        </member>
+        <member name="T:CExtension.Authorization.PermissionItem">
+            <summary>
+            用户或角色或其他凭据实体,就像是订单详情一样
+            之前的名字是 Permission
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionItem.Role">
+            <summary>
+            用户或角色或其他凭据名称
+            </summary>
+        </member>
+        <member name="P:CExtension.Authorization.PermissionItem.Url">
+            <summary>
+            请求Url
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionHandler.Schemes">
+            <summary>
+            验证方案提供对象
+            </summary>
+        </member>
+        <member name="M:CExtension.Permission.PermissionHandler.#ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,CApplication.IService.IPermissionService,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            构造函数注入
+            </summary>
+            <param name="schemes"></param>
+            <param name="roleModulePermissionServices"></param>
+            <param name="accessor"></param>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.Permissions">
+            <summary>
+            用户权限集合，一个订单包含了很多详情，
+            同理，一个网站的认证发行中，也有很多权限详情(这里是Role和URL的关系)
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.DeniedAction">
+            <summary>
+            无权限action
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.ClaimType">
+            <summary>
+            认证授权类型
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.LoginPath">
+            <summary>
+            请求路径
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.Issuer">
+            <summary>
+            发行人
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.Audience">
+            <summary>
+            订阅人
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.Expiration">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionRequirement.SigningCredentials">
+            <summary>
+            签名验证
+            </summary>
+        </member>
+        <member name="M:CExtension.Permission.PermissionRequirement.#ctor(System.String,System.Collections.Generic.List{CExtension.Permission.PermissionItem},System.String,System.String,System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.TimeSpan)">
+            <summary>
+            构造
+            </summary>
+            <param name="deniedAction">拒约请求的url</param>
+            <param name="permissions">权限集合</param>
+            <param name="claimType">声明类型</param>
+            <param name="issuer">发行人</param>
+            <param name="audience">订阅人</param>
+            <param name="signingCredentials">签名验证实体</param>
+            <param name="expiration">过期时间</param>
+        </member>
+        <member name="T:CExtension.Permission.PermissionItem">
+            <summary>
+            用户或角色或其他凭据实体,就像是订单详情一样
+            之前的名字是 Permission
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionItem.Role">
+            <summary>
+            用户或角色或其他凭据名称
+            </summary>
+        </member>
+        <member name="P:CExtension.Permission.PermissionItem.Url">
+            <summary>
+            请求Url
+            </summary>
+        </member>
+    </members>
+</doc>
